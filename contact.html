@@ -76,7 +76,6 @@
                     <li class="nav-item"><a class="nav-link" href="service.html">Сервис</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
                     <li class="nav-item"><a class="nav-link" href="payment.html">Оплата</a></li>
-
                 </ul>
             </div>
         </div>
@@ -90,20 +89,17 @@
             <div class="contact-info">
                 <p><strong>Телефон:</strong> +996 997 15-13-00</p>
                 <p><strong>Email:</strong> marketgmail@.com</p>
-                <p><strong>Адрес:</strong> Бишкек , улица Ахунбаева Офис NT-Technology </p>
+                <p><strong>Адрес:</strong> Бишкек, улица Ахунбаева, Офис NT-Technology</p>
                 <p><strong>Часы работы:</strong> Пн-Пт: 9:00 - 18:00</p>
-                
             </div>
 
             <!-- Карта -->
             <div class="map mb-4">
                 <h4 class="text-center mb-3">Наше местоположение</h4>
                 <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8906484133064!2d74.59008677464822!3d42.83720457191582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec8368dbef8ff%3A0x0!2zNDLCsDUwJzE0LjAiTiA3NMKwMzUnMjQuMyJF!5e0!3m2!1sen!2skg!4v1642569626942!5m2!1sen!2skg" 
-    allowfullscreen="">
-</iframe>
-
-
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8906484133064!2d74.59008677464822!3d42.83720457191582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec8368dbef8ff%3A0x0!2zNDLCsDUwJzE0LjAiTiA3NMKwMzUnMjQuMyJF!5e0!3m2!1sen!2skg!4v1642569626942!5m2!1sen!2skg" 
+                    allowfullscreen="">
+                </iframe>
             </div>
 
             <!-- Форма обратной связи -->
@@ -111,12 +107,33 @@
                 <h4 class="text-center mb-3">Отправьте нам сообщение</h4>
                 <form>
                     <div class="mb-3">
-                        <label for="name" class="form-label">Ваше имя</label>
-                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required>
+                        <label for="first-name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="last-name" class="form-label">Ваша фамилия</label>
+                        <input type="text" class="form-control" id="last-name" placeholder="Введите вашу фамилию" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Ваш Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Введите ваш email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Номер телефона</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Введите ваш номер телефона" required pattern="^\+996\(\d{2}\)\d{3}-\d{2}-\d{2}$">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Пол</label>
+                        <select class="form-select" id="gender" required>
+                            <option value="" disabled selected>Выберите ваш пол</option>
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                            <option value="other">Другой</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Тема</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Введите тему сообщения" required>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Сообщение</label>
